@@ -118,6 +118,10 @@ header a:hover{
     text-shadow: 2px 2px #ff0000;
 }
 
+#showcase p{
+    text-shadow: 2px 2px red;
+}
+
 
 /* News Letter */
 
@@ -152,6 +156,8 @@ header a:hover{
 #boxes .container{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 
