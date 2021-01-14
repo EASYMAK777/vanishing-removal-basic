@@ -8,6 +8,7 @@
     <meta name="author" content="Juan Flores">
     <title>Vanishing Removal USA | Welcome</title>
     <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="icon" type="image/png" href="./assets/img/magic-wand-icon.jpg">
 
 </head>
 <body>
@@ -60,7 +61,11 @@
     <section id="boxes">
         <div class="container">
             <div class="box">
-                <img src="./assets/img/junk-removal1.jpg" alt="html-logo" id="box">
+                <div class="w3-content w3-section" style="width: auto; height: auto;">
+                    <img class="mySlides" src="./assets/img/IMG_2493.JPG" style="width:100%">
+                    <img class="mySlides" src="./assets/img/IMG_2494.JPG" style="width:100%">
+                    <img class="mySlides" src="./assets/img/Junk-Removal-Bloomington.jpg" style="width:100%">
+                </div>
                 <h3>Junk Removal</h3>
                 <p>Is your garage full of cardboard? Does your attic have a few things that need to be cleared out? Does your yard have unsightly constuction and demolition rubbish from the new renovations? </p>
                 <p>Then call us!! No job too small!</p>
@@ -75,6 +80,14 @@
             </div>
         
 
+           
+            
+            <!-- <div class="w3-content w3-section" style="max-width:500px">
+                <img class="mySlides" src="./assets/img/IMG_2493.JPG" style="width:100%">
+                <img class="mySlides" src="./assets/img/IMG_2494.JPG" style="width:100%">
+                <img class="mySlides" src="./assets/img/Junk-Removal-Bloomington.jpg" style="width:100%">
+            </div> -->
+
         
             <!-- <div class="box">
                 <img src="./assets/img/js-logo.png" alt="javascript-logo" id="box">
@@ -84,6 +97,8 @@
         </div> -->
     </section>
 
+
+
     
 
     
@@ -91,5 +106,24 @@
     <footer>
         <p>Vanishing Removal USA, Copyright &copy; 2020</p>
     </footer>
+
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+
 </body>
 </html>

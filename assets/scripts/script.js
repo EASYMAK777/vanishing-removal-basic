@@ -57,4 +57,5 @@ function saveContactInfo(name, email, message, phone){
 };
 
 
+///////////////////SCRIPT FOR IMAGE SLIDER///////////////////////////////
 
