@@ -1,5 +1,7 @@
 //Modal//
 
+var myModal = document.getElementById('submitButton')
+var myInput = document.getElementById('myInput')
 
 
 
