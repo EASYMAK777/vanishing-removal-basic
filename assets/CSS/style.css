@@ -60,6 +60,18 @@ ul{
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 30px;
+    margin-right: 25px;
+}
+
+.dark2 {
+    padding:15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    margin-right: 15px;
+    margin-left: -20px;
 }
 
 /* Header */
@@ -193,22 +205,19 @@ header a:hover{
 }
 
 #boxes .box2 {
-    float: left;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    
-    width: 20%;
-   
-    padding:10px ;
 }
 
 
 
 #boxes .box2 img{
+    max-width: 200px;
+    max-height: 200px;
     
-    display: flex;
-    margin-bottom: 10px;
-    width: 100%;
 }
 
 /* Services */
@@ -325,6 +334,7 @@ aside#sidebar ul li{
 article#main-col {
     float: left;
     width:65%;
+    padding-left: 20px;
 }
 
 /* Appointment Button */
